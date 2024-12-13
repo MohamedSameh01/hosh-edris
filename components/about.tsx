@@ -35,7 +35,7 @@ export function About() {
             <p className="text-lg text-gray-600 leading-relaxed mb-8">
               {restaurantInfo.about}
             </p>
-            <div className="grid grid-cols-2 gap-6 sm-grid-cols-1 ">
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 ">
               <div className="bg-white p-4 rounded-lg shadow-md">
                 <h3 className="font-bold mb-2">ساعات العمل</h3>
                 <p className="text-gray-600">

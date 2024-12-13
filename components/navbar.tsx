@@ -17,22 +17,21 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav
-    
-      className="fixed w-full bg-white shadow-md z-50"
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="sticky top-0 w-full bg-white shadow-md z-50">
+      <div className="w-[100%] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
-          <div className="flex-shrink-0">
-            {/* <Image
-              src="/logo.png"
-              alt="شعار المطعم"
-              width={50}
-              height={50}
-              className="h-12 w-auto"
-            /> */}
-            <h1 className="text-primary text-3xl">حوش ادريس</h1>
-          </div>
+          <a href="#hero">
+            <div className="flex-shrink-0 flex justify-center items-center cursor-pointer">
+              <Image
+                src="/logo.jpg"
+                alt="شعار المطعم"
+                width={70}
+                height={70}
+                className="h-[50px] w-[50px] rounded-[50%] cursor-pointer"
+              />
+              <h1 className="text-primary text-xl sm:text-3xl ms-4">حوش ادريس</h1>
+            </div>
+          </a>
 
           <div className="hidden md:block">
             <div className="flex space-x-4 space-x-reverse">
